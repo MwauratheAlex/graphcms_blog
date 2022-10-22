@@ -1,14 +1,22 @@
-# Next.js + Tailwind CSS Example
+# Mbumwa Tech Blog
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is the official repository for Mbumwa Tech Blog.
 
-## Deploy your own
+## Project Description
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Mbumwa Tech Blog contains articles about old, new and exciting technologies.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+The blog also contains DIY Tutotorials dealing with electronics and microcontrollers such as the Arduino.
 
-## How to use
+The front end developed using NextJS and Tailwind.
+
+GraphQl was used for accessing the backend.
+
+## How to use the project
+
+All the code in this project is open source and can be adapted for blogs or anyother websites that require continous updates.
+
+## Installation
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
