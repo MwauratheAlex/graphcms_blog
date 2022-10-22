@@ -1,6 +1,8 @@
 # Mbumwa Tech Blog
 
-This is the official repository for Mbumwa Tech Blog.
+This is the official repository for [`Mbumwa Tech Blog.`](https://www.mbumwa.com)
+
+[`Visit the blog here!`](https://www.mbumwa.com)
 
 ## Project Description
 
