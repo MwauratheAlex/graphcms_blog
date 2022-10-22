@@ -1,0 +1,11 @@
+{
+    "name": "Name of your Project",
+    "schemaPath": "./schema.json",
+    "extensions": {
+      "endpoints": {
+        "Default GraphQL Endpoint": {
+          "url": "URL_to_your_graphql",
+        }
+      }
+    }
+  }
