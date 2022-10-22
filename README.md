@@ -2,7 +2,7 @@
 
 This is the official repository for [`Mbumwa Tech Blog.`](https://www.mbumwa.com)
 
-[`Visit the blog here!`](https://www.mbumwa.com)
+[`Visit the blog here`](https://www.mbumwa.com)
 
 ## Project Description
 
@@ -10,13 +10,13 @@ Mbumwa Tech Blog contains articles about old, new and exciting technologies.
 
 The blog also contains DIY Tutotorials dealing with electronics and microcontrollers such as the Arduino.
 
-The front end developed using `NextJS` and `Tailwind`.
+The front end was developed using `NextJS` and `Tailwind`.
 
 `GraphQl` was used for accessing the backend.
 
 ## How to use the project
 
-All the code in this project is open source and can be adapted for blogs or anyother websites that require continous updates.
+All the code in this project is open source and can be adapted for blogs or any other websites that require continous updates.
 
 ## Installation
 
