@@ -139,8 +139,10 @@ export const getSimilarPosts = async (categories, slug) => {
     return result.post;
 };
 
-export const submitComment = async (obj) => {
-  const result = await fetch('/api/comments', {
+export const submitComment = async (obj, req) => {
+  const baseUrl = req ? `${req.protocol}://${req.get('Host')}` : '';
+
+  const result = await fetch(baseUrl+'/api/comments', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
