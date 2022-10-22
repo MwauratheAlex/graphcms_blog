@@ -140,7 +140,8 @@ export const getSimilarPosts = async (categories, slug) => {
 };
 
 export const submitComment = async (obj, req) => {
-  const baseUrl = req ? `${req.protocol}://${req.get('Host')}` : '';
+  const protocol = req.headers['x-forwarded-proto'] || 'http'
+  const baseUrl = req ? `${protocol}://${req.headers.host}` : ''
 
   const result = await fetch('https://'+baseUrl+'/api/comments', {
     method: 'POST',
