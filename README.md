@@ -12,7 +12,7 @@ The blog also contains DIY Tutotorials dealing with electronics and microcontrol
 
 The front end developed using `NextJS` and `Tailwind`.
 
-GraphQl was used for accessing the backend.
+`GraphQl` was used for accessing the backend.
 
 ## How to use the project
 
