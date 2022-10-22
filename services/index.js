@@ -140,16 +140,18 @@ export const getSimilarPosts = async (categories, slug) => {
 };
 
 export const submitComment = async (obj) => {
+  if(global.window) {
 
-  const result = await fetch('/api/comments', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(obj),
-  });
-
-  return result.json();
+    const result = await fetch('/api/comments', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(obj),
+    });
+    
+    return result.json();
+  }
 };
 
 export const getComments = async (slug) => {
