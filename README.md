@@ -10,7 +10,7 @@ Mbumwa Tech Blog contains articles about old, new and exciting technologies.
 
 The blog also contains DIY Tutotorials dealing with electronics and microcontrollers such as the Arduino.
 
-The front end developed using NextJS and Tailwind.
+The front end developed using `NextJS` and `Tailwind`.
 
 GraphQl was used for accessing the backend.
 
