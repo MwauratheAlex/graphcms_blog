@@ -27,17 +27,17 @@ const PostDetail = ({post}) => {
       case 'heading-one':
         return <h1 key={index} className="font-bold leading-tight text-5xl mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h1>;
       case 'heading-two':
-        return <h2 key={index} className="mb-4 leading-tight text-4xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h2>;
+        return <h2 key={index} className="mb-4 leading-tight text-3xl md:text-4xl lg:text-5xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h2>;
       case 'heading-three':
-        return <h3 key={index} className="mb-4 leading-tight text-3xl font-bold dark:text-whit">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
+        return <h3 key={index} className="mb-4 leading-tight text-2xl md:text-3xl lg:text-4xl font-bold dark:text-whit">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
       case 'paragraph':
         return <p key={index} className="mb-8">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
       case 'heading-four':
-        return <h4 key={index} className="mb-4 leading-tight text-2xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
+        return <h4 key={index} className="mb-4 leading-tight text-xl md:text-2xl lg:text-3xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
       case 'heading-five':
-        return <h5 key={index} className="mb-4 leading-tight text-xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h5>;
+        return <h5 key={index} className="mb-4 leading-tight text-base md:text-xl lg:text-2xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h5>;
       case 'heading-six':
-        return <h6 key={index} className="mb-4 leading-tight text-base font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h6>;  
+        return <h6 key={index} className="mb-4 leading-tight text-sm md:text-base lg:text-xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h6>;  
       case 'image':
         return (
           <img
