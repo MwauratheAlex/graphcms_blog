@@ -27,9 +27,9 @@ const PostDetail = ({post}) => {
       case 'heading-one':
         return <h1 key={index} className="font-bold leading-tight text-5xl mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h1>;
       case 'heading-two':
-        return <h2 key={index} className="mb-4 leading-tight text-3xl md:text-4xl lg:text-5xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h2>;
+        return <h2 key={index} className="mb-4 leading-tight text-3xl md:text-4xl lg:text-4xl font-bold">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h2>;
       case 'heading-three':
-        return <h3 key={index} className="mb-4 leading-tight text-2xl md:text-3xl lg:text-4xl font-bold dark:text-whit">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
+        return <h3 key={index} className="mb-4 leading-tight text-2xl md:text-3xl lg:text-3xl font-bold dark:text-whit">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
       case 'paragraph':
         return <p key={index} className="mb-8">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
       case 'heading-four':
@@ -48,6 +48,16 @@ const PostDetail = ({post}) => {
             src={obj.src}
           />
         );
+      case 'block-quote':
+        return <blockquote key={index} className="p-4 my-4 bg-gray-50 border-l-4 border-gray-300">
+          <p className="text-base italic font-medium leading-relaxed text-gray-900 dark:text-white">
+            {modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}
+          </p>
+        </blockquote>
+      case 'code-block':
+        return <code className="block whitespace-pre overflow-x-auto p-4 bg-gray-50 border-l-4" v-text="dataset.bibText">
+          {modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}
+        </code>
       default:
         return modifiedText;
     }
