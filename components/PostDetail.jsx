@@ -50,7 +50,7 @@ const PostDetail = ({post}) => {
         );
       case 'block-quote':
         return <blockquote key={index} className="p-4 my-4 bg-gray-50 border-l-4 border-gray-300">
-          <p className="text-base italic font-medium leading-relaxed text-gray-900 dark:text-white">
+          <p className="text-base italic font-medium leading-relaxed text-gray-900 ">
             {modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}
           </p>
         </blockquote>
