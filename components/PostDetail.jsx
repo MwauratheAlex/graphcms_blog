@@ -1,7 +1,11 @@
 import React from 'react'
 import moment from 'moment'
+import { RichText } from '@graphcms/rich-text-react-renderer';
 
 const PostDetail = ({post}) => {
+  const post2 = post.content.raw;
+  console.log({post2});
+
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 
@@ -20,12 +24,20 @@ const PostDetail = ({post}) => {
     }
 
     switch (type) {
+      case 'heading-one':
+        return <h1 key={index} className="font-bold leading-tight text-5xl mb-4 dark:text-white">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h1>;
+      case 'heading-two':
+        return <h2 key={index} className="mb-4 leading-tight text-4xl font-bold dark:text-white">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h2>;
       case 'heading-three':
-        return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
+        return <h3 key={index} className="mb-4 leading-tight dark:text-white text-3xl font-bold dark:text-whit">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
       case 'paragraph':
         return <p key={index} className="mb-8">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
       case 'heading-four':
-        return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
+        return <h4 key={index} className="mb-4 leading-tight text-2xl font-bold dark:text-white">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
+      case 'heading-five':
+        return <h5 key={index} className="mb-4 leading-tight text-xl font-bold dark:text-white">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h5>;
+      case 'heading-six':
+        return <h6 key={index} className="mb-4 leading-tight text-base font-bold dark:text-white">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h6>;  
       case 'image':
         return (
           <img
@@ -79,7 +91,12 @@ const PostDetail = ({post}) => {
             </span>
           </div>
         </div>
-        <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
+        <h1 
+          className="mb-8 text-4xl font-extrabold tracking-tight leading-none
+           text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            {post.title}
+        </h1>
+        
         {post.content.raw.children.map((typeObj, index) => {
           const children = 
             typeObj

@@ -9,7 +9,7 @@ const Home = ({posts} ) => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
-        <title>Mwaura</title>
+        <title>mbumwa</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
